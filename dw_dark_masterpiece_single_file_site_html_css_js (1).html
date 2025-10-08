@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Duane Wall — Intelligent Digital Architect</title>
+  <meta name="description" content="Engineering digital intelligence. Turning data into dollar-sign decisions. Full‑stack AI + web architecture for growth." />
+  <meta name="theme-color" content="#0b0f14" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+  <!-- Tailwind (JIT CDN) for single‑file dev; compile for production -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: { 900: '#0b0f14', 800: '#0f141b', 700: '#141b23' },
+            cyan: { 400: '#2ee6ff', 500: '#00d0ff' },
+            violet: { 400: '#c768ff', 500: '#9d4cff' }
+          },
+          boxShadow: { glow: '0 0 0 1px rgba(46,230,255,.25), 0 8px 40px rgba(157,76,255,.15)' },
+          fontFamily: {
+            ui: ['Inter var','system-ui','-apple-system','Segoe UI','Roboto','Ubuntu','Cantarell','Noto Sans','Helvetica Neue','Arial','sans-serif']
+          },
+          backgroundImage: {
+            grid: 'radial-gradient(circle at 25% -10%, rgba(0,208,255,.12), transparent 35%), radial-gradient(circle at 75% 110%, rgba(157,76,255,.12), transparent 35%)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root{--grad:linear-gradient(90deg,#2ee6ff 0%,#9d4cff 100%)}
+    .gtext{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .gborder{border-image:var(--grad) 1}
+    .reduce-motion *{animation:none!important;transition:none!important}
+    .stars{background-image:radial-gradient(2px 2px at 20px 30px,#20304055,transparent),radial-gradient(1px 1px at 40px 70px,#314a6255,transparent),radial-gradient(1px 1px at 130px 90px,#20304055,transparent),radial-gradient(2px 2px at 170px 190px,#3a5a7655,transparent);background-size:200px 200px}
+    @media (prefers-reduced-motion:no-preference){.parallax{background-position:0 0;animation:float 30s linear infinite}@keyframes float{0%{background-position:0 0}100%{background-position:-400px 800px}}}
+  </style>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Duane Wall — Intelligent Digital Architect">
+  <meta property="og:description" content="Beyond the Website. Beyond the Algorithm. AI‑powered growth + web excellence." />
+  <meta property="og:type" content="website" />
+</head>
+<body class="bg-ink-900 text-white font-ui antialiased selection:bg-violet-500/30" id="top">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:z-50 focus:top-3 focus:left-3 bg-ink-700 px-3 py-2 rounded">Skip to content</a>
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 border-b border-white/5 bg-ink-900/70 backdrop-blur supports-[backdrop-filter]:bg-ink-900/50">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-2 font-black tracking-wider">
+        <span class="w-8 h-8 rounded grid place-items-center bg-gradient-to-br from-cyan-500 to-violet-500">DW</span>
+        <span class="text-sm text-white/70 hidden sm:block">Intelligent Digital Architect</span>
+      </a>
+      <ul class="flex items-center gap-6 text-sm">
+        <li><a href="#home" class="hover:text-cyan-400">Home</a></li>
+        <li><a href="#services" class="hover:text-cyan-400">Services</a></li>
+        <li><a href="#about" class="hover:text-cyan-400">About</a></li>
+        <li><a href="#contact" class="hover:text-cyan-400">Contact</a></li>
+        <li class="hidden sm:block text-white/60">Orlando, FL</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="relative overflow-hidden">
+      <div class="absolute inset-0 stars parallax opacity-60"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[78vh] md:min-h-[86vh] grid place-content-center text-center bg-grid">
+        <h1 class="text-5xl sm:text-7xl md:text-8xl font-black tracking-tight leading-[0.95]"><span class="gtext">DUANE WALL</span></h1>
+        <p class="mt-4 text-lg md:text-2xl tracking-[.2em] text-white/80">INTELLIGENT DIGITAL ARCHITECT</p>
+        <p class="mt-6 max-w-3xl mx-auto text-white/70">Engineering digital intelligence. Turning data into dollar‑sign decisions.</p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#contact" class="px-6 py-3 rounded-xl border gborder shadow-glow hover:shadow-lg hover:shadow-cyan-500/20">Build My Future</a>
+          <a href="#services" class="px-6 py-3 rounded-xl border gborder bg-white/5 hover:bg-white/10">Explore Services</a>
+        </div>
+        <div class="mt-12 flex items-center justify-center text-xs text-white/50 gap-3">
+          <span class="h-px w-12 bg-white/10"></span>
+          <span>Beyond the Website • Beyond the Algorithm</span>
+          <span class="h-px w-12 bg-white/10"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT / VISION -->
+    <section id="about" class="relative py-20 sm:py-28 border-t border-white/5">
+      <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div class="absolute inset-x-0 -top-24 h-48 bg-gradient-to-b from-cyan-500/10 to-transparent blur-2xl"></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+        <div data-reveal>
+          <h2 class="text-4xl sm:text-5xl font-extrabold"><span class="gtext">THE VISION</span></h2>
+          <p class="mt-4 text-xl text-white/80">Beyond the Website, Beyond the Algorithm.</p>
+          <p class="mt-6 text-white/70 leading-relaxed">I don't just build websites and write code; I engineer intelligent, growth‑driving digital experiences. Your platform becomes a proactive, predictive component of your business strategy—so every click compounds into results.</p>
+          <ul class="mt-6 space-y-3 text-white/70">
+            <li>• Personalization that adapts in real‑time.</li>
+            <li>• Predictive insights that flag opportunities and risk before they appear.</li>
+            <li>• Production‑grade security and scalability by design.</li>
+          </ul>
+        </div>
+        <div class="relative" data-reveal>
+          <div class="aspect-[16/10] rounded-2xl border border-white/10 bg-[radial-gradient(circle_at_30%_20%,#00d0ff22,transparent_40%),radial-gradient(circle_at_70%_80%,#9d4cff22,transparent_40%)] p-1">
+            <div class="w-full h-full rounded-[14px] bg-ink-800/80 grid md:grid-cols-2">
+              <div class="p-6 border-r border-white/5">
+                <h3 class="text-sm tracking-widest text-white/50">PREDICTIVE EDGE</h3>
+                <p class="mt-2 text-white/80">Generative AI + ML embedded into the product: churn prediction, smart content, anomaly detection.</p>
+              </div>
+              <div class="p-6">
+                <h3 class="text-sm tracking-widest text-white/50">CONVERSATIONAL INTERFACE</h3>
+                <p class="mt-2 text-white/80">Blazing‑fast web apps (React/Vue) with intuitive, secure UX. SPA performance without the bloat.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-20 sm:py-28 bg-ink-800/40 border-y border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header class="text-center max-w-3xl mx-auto" data-reveal>
+          <h2 class="text-4xl sm:text-5xl font-extrabold"><span class="gtext">MY PILLARS OF POWER</span></h2>
+          <p class="mt-3 text-white/70">The foundation for your digital empire.</p>
+        </header>
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
+          <article class="p-6 rounded-2xl border gborder bg-white/5 hover:shadow-glow transition" data-reveal>
+            <div class="text-cyan-400" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20v-6"/><circle cx="12" cy="7" r="3"/><path d="M5 20v-4c0-2.2 1.8-4 4-4h6c2.2 0 4 1.8 4 4v4"/></svg>
+            </div>
+            <h3 class="mt-4 text-xl font-bold text-cyan-400">The Predictive Edge</h3>
+            <p class="text-sm text-violet-300/90">AI‑Powered Growth</p>
+            <p class="mt-3 text-white/80">Integrate Generative AI & Machine Learning for personalized journeys, predictive analysis, and automated content. Business foresight—not just intelligence.</p>
+          </article>
+          <article class="p-6 rounded-2xl border gborder bg-white/5 hover:shadow-glow transition" data-reveal>
+            <div class="text-violet-400" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M9 18h6"/></svg>
+            </div>
+            <h3 class="mt-4 text-xl font-bold text-cyan-400">The Conversational Interface</h3>
+            <p class="text-sm text-violet-300/90">Web Excellence</p>
+            <p class="mt-3 text-white/80">Custom, blazing‑fast web apps with secure, accessible UX. SPA feel, SEO‑friendly delivery.</p>
+          </article>
+          <article class="p-6 rounded-2xl border gborder bg-white/5 hover:shadow-glow transition" data-reveal>
+            <div class="text-cyan-400" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7h18"/><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7v10M15 7v10"/></svg>
+            </div>
+            <h3 class="mt-4 text-xl font-bold text-cyan-400">The Infrastructure of Innovation</h3>
+            <p class="text-sm text-violet-300/90">Developer Prowess</p>
+            <p class="mt-3 text-white/80">Serverless + microservices. Secure, scalable, cost‑efficient foundations ready to surge from 10 to 10M users.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROOF / METRICS -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-6 text-center">
+        <div class="p-6 rounded-xl bg-white/5 border border-white/10" data-reveal>
+          <p class="text-4xl font-extrabold gtext">92%</p>
+          <p class="text-white/70 mt-1">Core Web Vitals pass rate target</p>
+        </div>
+        <div class="p-6 rounded-xl bg-white/5 border border-white/10" data-reveal>
+          <p class="text-4xl font-extrabold gtext">&lt;6h</p>
+          <p class="text-white/70 mt-1">From idea to validated prototype</p>
+        </div>
+        <div class="p-6 rounded-xl bg-white/5 border border-white/10" data-reveal>
+          <p class="text-4xl font-extrabold gtext">99.9%</p>
+          <p class="text-white/70 mt-1">Uptime architecture goal</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA / CONTACT -->
+    <section id="contact" class="relative py-24 border-y border-white/5">
+      <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,rgba(0,208,255,.12),transparent_60%)]"></div>
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-5xl font-extrabold"><span class="gtext">YOUR COMPETITIVE ADVANTAGE AWAITS.</span></h2>
+        <p class="mt-4 text-white/75 max-w-2xl mx-auto">I don't just deliver a product—I deliver the strategic edge that automates, predicts, and drives your growth.</p>
+        <div class="mt-10 grid lg:grid-cols-2 gap-8 text-left">
+          <form id="consult" class="p-6 rounded-2xl bg-ink-800/80 border border-white/10 shadow-glow">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <label class="text-sm">Full Name<input required name="name" class="mt-1 w-full px-3 py-2 rounded bg-ink-900 border border-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400" /></label>
+              <label class="text-sm">Work Email<input required type="email" name="email" class="mt-1 w-full px-3 py-2 rounded bg-ink-900 border border-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400" placeholder="name@company.com" /></label>
+              <label class="text-sm sm:col-span-2">Company / Project<input required name="company" class="mt-1 w-full px-3 py-2 rounded bg-ink-900 border border-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400" /></label>
+              <label class="text-sm sm:col-span-2">Project Summary<textarea required name="message" rows="4" class="mt-1 w-full px-3 py-2 rounded bg-ink-900 border border-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400"></textarea></label>
+            </div>
+            <p id="msg" class="sr-only mt-3"></p>
+            <button class="mt-4 w-full px-6 py-3 rounded-xl border gborder bg-white/5 hover:bg-white/10">Book My Strategic Session</button>
+            <p class="mt-3 text-xs text-white/50">We respect inboxes. SMS optional and 10DLC compliant when enabled.</p>
+          </form>
+          <div class="p-6 rounded-2xl bg-ink-800/40 border border-white/10">
+            <h3 class="font-bold text-xl">What you get in the first call</h3>
+            <ul class="mt-4 space-y-3 text-white/75">
+              <li>• A quick audit of your current experience + vitals</li>
+              <li>• A 30‑day action plan (no fluff)</li>
+              <li>• A roadmap for AI‑assisted growth unique to your model</li>
+            </ul>
+            <div class="mt-6 grid sm:grid-cols-2 gap-3 text-sm">
+              <div class="p-4 rounded-lg bg-white/5 border border-white/10">Core Web Vitals Plan</div>
+              <div class="p-4 rounded-lg bg-white/5 border border-white/10">AI Personalization Ideas</div>
+              <div class="p-4 rounded-lg bg-white/5 border border-white/10">Security & Scale Checklist</div>
+              <div class="p-4 rounded-lg bg-white/5 border border-white/10">Rapid Prototype Options</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER with #year present to satisfy script -->
+  <footer class="py-10 text-center text-white/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-center gap-2">
+        <span class="w-6 h-6 rounded bg-gradient-to-br from-cyan-500 to-violet-500"></span>
+        <span class="text-sm">© <span id="year"></span> Duane Wall — Orlando, FL</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ---- Runtime guards to prevent null reference errors ----
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    const revealTargets = document.querySelectorAll('[data-reveal]');
+    if ('IntersectionObserver' in window && revealTargets.length) {
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => e.isIntersecting && e.target.classList.add('opacity-100','translate-y-0'))
+      }, {threshold: .15});
+      revealTargets.forEach(el => { el.classList.add('opacity-0','translate-y-6','transition','duration-700'); io.observe(el); });
+    }
+
+    // Form handling with webhook placeholder + free-email domain guard
+    const FREE_DOMAINS = new Set(['gmail.com','yahoo.com','hotmail.com','outlook.com','aol.com','icloud.com','mail.com','proton.me','protonmail.com','live.com']);
+    const form = document.getElementById('consult');
+    const msg = document.getElementById('msg');
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const data = Object.fromEntries(new FormData(form));
+        const domain = (data.email||'').split('@')[1]||'';
+        if (FREE_DOMAINS.has(domain.toLowerCase())) {
+          if (msg) { msg.className='mt-3 text-amber-300'; msg.textContent='Please use a work email so we can prioritize your request.'; msg.setAttribute('role','status'); msg.setAttribute('aria-live','polite'); msg.classList.remove('sr-only'); }
+          return;
+        }
+        const WEBHOOK = 'YOUR_WEBHOOK_URL_HERE';
+        if (WEBHOOK.includes('YOUR_WEBHOOK_URL_HERE')) {
+          if (msg) { msg.className='mt-3 text-cyan-300'; msg.textContent='Form is wired and ready. Add your webhook endpoint to start receiving submissions.'; msg.classList.remove('sr-only'); }
+          return;
+        }
+        try {
+          const res = await fetch(WEBHOOK,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
+          if (!res.ok) throw new Error('Network response was not ok');
+          if (msg) { msg.className='mt-3 text-green-300'; msg.textContent='Thanks! We will reach out shortly.'; msg.classList.remove('sr-only'); }
+          form.reset();
+        } catch (err) {
+          if (msg) { msg.className='mt-3 text-rose-300'; msg.textContent='Submission failed. Please try again or email us.'; msg.classList.remove('sr-only'); }
+        }
+      });
+    }
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { document.body.classList.add('reduce-motion'); }
+
+    // ---- Lightweight runtime "tests" (only when DEBUG=true) ----
+    const DEBUG = false;
+    if (DEBUG) {
+      console.assert(!!document.getElementById('year'), '#year span should exist');
+      console.assert(!!document.getElementById('consult'), '#consult form should exist');
+      console.assert(!!document.getElementById('msg'), '#msg status p should exist');
+    }
+  </script>
+</body>
+</html>
